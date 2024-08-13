@@ -2,12 +2,16 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-personas',
-  templateUrl:'./personas.component.html',
-  // styleUrls: ['./personas.component.css'],
-  styles: [`
-  h1{
-    color:blue;
-  }
-  `]
+  templateUrl: './personas.component.html',
+  styleUrls: ['./personas.component.css'],
 })
-export class PersonasComponent {}
+
+export class PersonasComponent {
+  deshabilitar = false;
+
+  mensaje: string = 'No se ha agregado ninguna persona';
+
+  agregarPersona() {
+    this.mensaje = 'Persona agregada';
+  }
+}
