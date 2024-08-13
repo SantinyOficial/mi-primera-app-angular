@@ -7,6 +7,11 @@ import { Component} from '@angular/core';
 })
 export class PersonaComponent {
 
-   
-
+   nombre: string = 'Juan';
+   apellido: string = 'Perez';
+   edad:number = 8;
+  //  private edad: number = 8;
+  //  getEdad():number{
+  //  return this.edad;
+  //  }
 }
